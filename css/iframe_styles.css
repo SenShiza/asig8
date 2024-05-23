@@ -1,0 +1,59 @@
+body {
+	background-color:#D3D3D3;
+}
+
+iframe { margin: 30px; }
+
+h1 {
+    color: purple;
+	font-size: 300%;
+}
+h2 {
+    text-align: center;
+    color: blue;
+}
+
+h6 {
+    color: yellow;
+	background-color: black;
+	font-size: 70%;
+	font-family: Comic Sans MS;
+	text-align: right;
+	display: block;
+}
+
+p {
+    color: red;
+}
+
+pre {
+	color: black;
+	font-size: 150%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+	font-family: Comic Sans MS;
+	font-weight: bold;
+	font-size: 150%;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111111;
+}
