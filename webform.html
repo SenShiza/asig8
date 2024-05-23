@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LAB3-COTI4210</title>
+	
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="../css/styles.css">
+
+</head>
+<body>
+
+
+<!-- Header -->
+<div class="header">
+  <h1 style="color: white;">Sistemas Operativos - Noticias y Tendencias</h1>
+  <p>Por: César E. Rivera Nuñez</p>
+</div>
+
+<!-- Navigation Bar -->
+<div class="navbar">
+  <a href="../html/index.html">Home</a>
+  <a href="../html/webform.html">Web Form</a>
+  <a href="../html/iframe_local.html">iFrame Local</a>
+  <a href="../html/iframe_externo.html">iFrame Externo</a>
+  <a href="../html/about.html">About</a>
+</div>
+
+<!-- The flexible grid (content) -->
+<div class="row">
+ 
+  <div class="main">
+    <h3>Contáctenos:</h3>
+	<p> Llene el siguiente formulario para mantenerse en contacto: </p>
+	<form  action="../html/gracias.html" method="post"> 
+	
+		<fieldset>
+            <legend>Fecha de Hoy:</legend>
+            <label for="todaytime">Fecha de Hoy: (fecha y hora):</label>
+			<input type="datetime-local" id="todaytime" name="todaytime">
+        </fieldset>
+		<br>
+        <fieldset>
+            <legend>Información Básica de Contacto:</legend>            
+            <label>Nombre: <input type="text" name="firstname"></label>
+            <label>Inicial: <input type="text" name="inicial" size="2"></label>            
+            <label>Apellido: <input type="text" name="lastname"></label><br><br>
+			<label>Correo Electrónico: <input type="email" name="email" maxlength="40" disabled></label><br><br>
+            <label>Teléfono: <input type="number" name="phone" placeholder="787-999-9999" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><br><br>
+			<small>Formato: 787-123-4567</small><br></label><br>
+			<label for="country">País de Residencia:</label>  
+			<input type="text" id="country" name="country" value="Puerto Rico" readonly><br><br>
+			<label>Dirección: <br> <textarea cols="60" rows="5">Escriba su dirección (Calle, Apartamento, Urbanizacion y Ciudad</textarea> </label>
+        </fieldset>
+		<br>
+		<fieldset>
+            <legend>Hora que prefiere que sea contactado:</legend>
+            <label for="contacthour">Seleccione hora:</label>
+			<input type="time" id="contacthour" name="contacthour">
+        </fieldset>
+		<br>
+		<fieldset>
+            <legend>Semana que usted entiende estará de vacaciones para ser contactado:</legend>
+            <label for="week">Select una semana:</label>
+			<input type="week" id="week" name="week">
+        </fieldset>
+		<br>
+        <fieldset>
+            <legend>Género</legend>            
+            <label><input type="radio" name="gender" value="masculino"> Masculino</label>            
+            <label><input type="radio" name="gender" value="femenino"> Femenino</label>
+            
+            <label><input type="radio" name="gender" value="otros"> Otros</label>
+        </fieldset>
+		<br>
+		<fieldset>
+        	<legend>Tipo de Computadora Preferida:</legend>            
+			<select id="cars">
+				<option value="desktop">Desktop</option>
+				<option value="laptop">Laptop</option>
+				<option value="notebook">Notebook</option>
+				<option value="tablet">Tablet</option>
+			</select>
+        </fieldset>
+		<br>
+		<fieldset>
+        	<legend>Marca de Computadora Preferida:</legend>            
+            <input type="text" list="computers" name="favorite_computer">
+			<datalist id="computers">
+				<option value="Dell">
+				<option value="HP">    
+				<option value="Lenovo">
+				<option value="Acer">
+				<option value="Apple">
+			</datalist>
+        </fieldset>
+		<br>
+        <fieldset>
+        	<legend>Sistema Operativo que usted ha utilizado:</legend>            
+            <label><input type="checkbox" name="os" value="windows"> Windows</label>
+            <label><input type="checkbox" name="os" value="mac"> Mac</label>
+            <label><input type="checkbox" name="os" value="linux"> Linux</label>
+			<label><input type="checkbox" name="os" value="android"> Android</label>
+			<label><input type="checkbox" name="os" value="ios"> iOS</label>
+        </fieldset>
+		<br>
+		<fieldset>
+			<legend> Frecuencia de Uso del Sistema Operativo </legend>
+			  <label for="vol">Frecuencia (entre 0 a 10):</label>
+			<input type="range" id="freq" name="freq" min="0" max="10"><br>
+			 <label for="points">Veces que usa la computadora a la semana:</label>
+			<input type="number" id="quantity" name="quantity" step="2">
+		</fieldset>
+		<br>
+        <fieldset>
+            <legend>Seleccione su Color Favorito:</legend>
+          <label for="favcolor">Seleccione su color favorito:</label>
+          <input type="color" id="favcolor" name="favcolor" value="#ff0000">
+        </fieldset>
+		<br>
+		 <fieldset>
+            <legend>Fecha de Nacimiento:</legend>
+            <label for="birthday">Nacimiento:</label>
+			<input type="date" id="birthday" name="birthday">
+        </fieldset>
+		<br>
+		<fieldset>
+            <legend>Fecha de Graduación:</legend>
+            <label for="gradmonth">Graduación: (mes y año):</label>
+			<input type="month" id="gradmonth" name="gradmonth">
+        </fieldset>
+		<br>
+		   <fieldset>
+            <legend>Cree una Cuenta de Usuario</legend>
+            <label>Correo Electrónico: <input type="email" name="email" maxlength="40" required></label>
+            <label>Password: <input type="password" name="password" required></label>
+			<label> Confirm Password: <input type="password" name="password1" required></label>
+        </fieldset>
+		<br>
+		<input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+	<br>
+	<a href="../html/index.html">Volver a Inicio</a>
+<br>
+  </div>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+  <h6>COTI-4210 César E. Rivera Nuñez &copy; 2024 &nbsp;</h6>
+</div>
+
+</body>
+</html>
